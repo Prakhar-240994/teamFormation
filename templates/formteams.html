@@ -1,0 +1,35 @@
+<!-- formteams.html -->
+{% extends "layout.html" %}
+{% block body %}
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <table border='0' cellpadding="10">
+        <tr>
+          <td colspan='2'><h3>Database details</h3></td>
+        </tr>
+        <tr>
+          <td>Number of Registered Members</td>
+          <td><b>{{ noOfMembers }}</b></td>
+        </tr>
+        <tr>
+          <td>Number of Teams</td>
+          <td><b>{{ noOfTeams }}</b></td>
+        </tr>
+        <tr>
+          <td>Number of Architects</td>
+          <td><b>{{ noOfArchitects }}</b></td>
+        </tr>
+        <tr>
+          <td>Number of Experienced Members</td>
+          <td><b>{{ noOfExperienced }}</b></td>
+        </tr>
+        <tr><td colspan="2">&nbsp;</td></tr>
+        <tr>
+          <td colspan="2" align="center"><input type="button" value="Form Teams" class="btn btn-primary"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}
